@@ -48,5 +48,6 @@ jobs:
       - name: Step two
         uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
       - name: Step three
-        run: echo ${{ env.DEV_NAME }}
-        run: echo ${{ secrets.DEV_NAME }}
+        run: |
+            echo ${{ env.DEV_NAME }}
+            echo ${{ secrets.DEV_NAME }}
