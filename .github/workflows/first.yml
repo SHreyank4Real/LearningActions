@@ -39,3 +39,11 @@ jobs:
         run: |
          pwd
          who
+  job5:
+    name: python-lint-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
